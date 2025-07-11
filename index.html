@@ -1,20 +1,33 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel da Horta</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel da Horta 🌿</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>🌱 Painel da Horta</h1>
-    <p>Bem-vinda, Érica! Aqui será exibido o status das suas plantas, colheitas e solo.</p>
-    <div id="info">
-        <ul>
-            <li>🌿 Planta: Rúcula — Plantada em 01/07</li>
-            <li>☀️ Sol: 6h por dia</li>
-            <li>💧 Rega: Última em 10/07</li>
-        </ul>
+  <div class="sidebar">
+    <h2>🌱 Menu</h2>
+    <button onclick="registrar('plantio')">🪴 Plantar</button>
+    <button onclick="registrar('rega')">💧 Rega</button>
+    <button onclick="registrar('sol')">☀️ Horas de Sol</button>
+    <button onclick="registrar('adubo')">🌱 Adubação</button>
+    <button onclick="registrar('clima')">🔥 Onda de Calor</button>
+    <button onclick="mostrarHistorico()">📅 Histórico</button>
+  </div>
+  <div class="content">
+    <h1>🌾 Painel da Horta da Érica</h1>
+    <div id="mensagem">Clique em um botão no menu para registrar.</div>
+    <div id="historico" style="display:none;">
+      <h2>📋 Histórico</h2>
+      <ul>
+        <li>🌱 Plantio: Rúcula em 01/07/2025</li>
+        <li>💧 Rega: 10/07/2025</li>
+      </ul>
     </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
