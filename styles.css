@@ -1,0 +1,16 @@
+
+body {
+    background-color: #e9f5e9;
+    color: #2f4f2f;
+    font-family: Arial, sans-serif;
+    padding: 2em;
+}
+h1 {
+    color: #4caf50;
+}
+#info {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #aaa;
+}
